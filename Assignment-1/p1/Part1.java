@@ -30,13 +30,13 @@ Set 2 -> 3 0 2 0 21
  
 Format the output adequately showing the 4 columns (QTY, DESCRIPTION, UNIT PRICE, TOTAL PRICE) in a single row. Use System.out.printf for output.
  */
-
+import java.util.Scanner;
 
 
  public class Part1 {
         public static void main(String[] args) {
           
-          // data segment
+          // DATA SEGMENT
 
           // quantity variables
           int quantityTV = 0;
@@ -46,23 +46,65 @@ Format the output adequately showing the 4 columns (QTY, DESCRIPTION, UNIT PRICE
           int quantityTapeRec = 0;
 
           // price variables
-          float priceTV = 0;
-          float priceVCR = 0;
-          float priceRmtCnt = 0;
-          float priceCD = 0;
-          float priceTapeRec = 0;
+          final float priceTV = (float) 400.00;
+          final float priceVCR = (float) 220;
+          final float priceRmtCnt = (float) 35.20;
+          final float priceCD =  (float) 300.00;
+          final float priceTapeRec = (float) 150.00;
 
           // total price after processing 
+          float  totalTV = 0;
+          float  totalVCR = 0;
+          float  totalRmtCnt = 0;
+          float  totalCD = 0;
+          float  totalTapeRec = 0;
 
-          float totalTV = 0;
-          float totalVCR = 0;
-          float totalRmtCnt = 0;
-          float totalCD = 0;
-          float totalTapeRec = 0;
+          final float tax = (float) 0.085;
+          float  total = 0;
+          float  totalTax = 0;
+          float  grandtotal = 0;
 
-          float total = 0;
-          float tax = 0;
-          float grandtotal = 0;
+          // INPUT
+          
+           Scanner myScanner = new Scanner(System.in); // Create scanner object
+
+
+          System.out.printf("How many TV's were sold? ");
+          quantityTV = myScanner.nextInt();
+          System.out.printf("How many VCR's were sold? ");
+          quantityVCR = myScanner.nextInt();
+          System.out.printf("How many remote controllers were sold? ");
+          quantityRmtCnt = myScanner.nextInt();
+          System.out.printf("How many CD's were sold? ");
+          quantityCD = myScanner.nextInt();
+          System.out.printf("How many tape recorders were sold? ");
+          quantityTapeRec = myScanner.nextInt();
+
+ 
+          // PROCESSING
+
+          totalTV = quantityTV * priceTV;
+          totalVCR = quantityVCR * priceVCR;
+          totalRmtCnt = quantityRmtCnt * priceRmtCnt;
+          totalCD = quantityCD * priceCD;
+          totalTapeRec = quantityTapeRec * priceTapeRec;
+
+          total = totalTV + totalVCR + totalRmtCnt + totalCD + totalTapeRec;
+          totalTax = total * tax;
+          grandtotal = total + tax;
+
+          // PRINTING
+          // Header
+          System.out.printf("\t%2s\t%-16s%17s\t%-5s\n", "Qty", "Description", "Unit Price", "Total Price");
+          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "TV's", priceTV, "   ", totalTV);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "VCR's", priceVCR, "   ", totalVCR);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "Remote Controllers", priceRmtCnt, "   ", totalRmtCnt);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "CD's", priceCD,"   ", totalCD);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "Tape Recorders", priceTapeRec, "   ", totalTapeRec);
+
+
+          myScanner.close();
+
 
           
 

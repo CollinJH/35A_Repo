@@ -13,9 +13,9 @@ Design
 
 Variables
     (int) variables to keep track of product quantity, quantityTV, quantityVCR, quantityRmtCnt, quantityCD, quantityTapeRec
-    (float) variables for each unit price - priceTV, priceVCR, priceRmtCnt, priceCD, priceTapeRec
-    (float) variables for total price - totalTV, totalVCR, totalRmtCnt, totalCD, totalTapeRec
-    (float) variables for total, tax and grandtotal - total, tax, grandtotal
+    (double) variables for each unit price - priceTV, priceVCR, priceRmtCnt, priceCD, priceTapeRec
+    (double) variables for total price - totalTV, totalVCR, totalRmtCnt, totalCD, totalTapeRec
+    (double) variables for total, tax and grandtotal - total, tax, grandtotal
 
 Input
     Prompt user 
