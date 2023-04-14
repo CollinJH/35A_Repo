@@ -1,0 +1,38 @@
+Prompt - 
+Write a program to create a customer's bill for a company. The company sells only five different products: TV, VCR, Remote Controller, CD Player and Tape Recorder.
+The unit prices are $400.00, $220, $35.20, $300.00 and $150.00 respectively.
+The program must read the quantity of each piece of equipment purchased from the keyboard.
+It then, calculates the cost of each item, the subtotal and the total cost after an 8.25% sales tax.
+The input data consists of a set of integers representing the quantities of each item sold. These integers must be input into the program in a user- friendly way; that is,
+the program must prompt the user for each quantity as shown below - 
+
+
+
+
+Design
+
+Variables
+    (int) variables to keep track of product quantity, quantityTV, quantityVCR, quantityRmtCnt, quantityCD, quantityTapeRec
+    (float) variables for each unit price - priceTV, priceVCR, priceRmtCnt, priceCD, priceTapeRec
+    (float) variables for total price - totalTV, totalVCR, totalRmtCnt, totalCD, totalTapeRec
+    (float) variables for total, tax and grandtotal - total, tax, grandtotal
+
+Input
+    Prompt user 
+    System.out.printf("enter # of [item] bought");
+    Use scanner to take input from user for each qty of TV, VCR, RmtCnt, CD, and TapeRec
+    quantity[item] = scanner.nextInt();
+
+
+Processing
+    Calculate total price for each input
+    total[item] = quantity[item] * price[item]
+    .
+    .
+    .
+    .
+    computer total
+    compute 8.25 tax rate
+    computer total + tax = grandtotal
+
+Printing
