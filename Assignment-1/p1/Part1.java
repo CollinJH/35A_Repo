@@ -62,7 +62,7 @@ import java.util.Scanner;
           final float tax = (float) 0.085;
           float  total = 0;
           float  totalTax = 0;
-          float  grandtotal = 0;
+          float  grandTotal = 0;
 
           // INPUT
           
@@ -91,16 +91,19 @@ import java.util.Scanner;
 
           total = totalTV + totalVCR + totalRmtCnt + totalCD + totalTapeRec;
           totalTax = total * tax;
-          grandtotal = total + tax;
+          grandTotal = total + tax;
 
           // PRINTING
           // Header
-          System.out.printf("\t%2s\t%-16s%17s\t%-5s\n", "Qty", "Description", "Unit Price", "Total Price");
+          System.out.printf("\t%2s\t%-16s%16s\t%s\n", "Qty", "Description", "Unit Price", "Total Price");
           System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "TV's", priceTV, "   ", totalTV);
           System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "VCR's", priceVCR, "   ", totalVCR);
           System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "Remote Controllers", priceRmtCnt, "   ", totalRmtCnt);
           System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "CD's", priceCD,"   ", totalCD);
-          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "Tape Recorders", priceTapeRec, "   ", totalTapeRec);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n\n", quantityTV, "Tape Recorders", priceTapeRec, "   ", totalTapeRec);
+          System.out.printf("\t\t\t%23s\t\t%.2f\n", "Subtotal: ", total);
+          System.out.printf("\t\t\t%23s\t\t%.2f\n", "Tax: ", totalTax);
+          System.out.printf("\t\t\t%23s\t\t%.2f\n", "GrandTotal: ", grandTotal);
 
 
           myScanner.close();
