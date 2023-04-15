@@ -6,19 +6,40 @@ Submitted   04-14-2023
 
 Test Output From Console -
 
-How many TV's were sold? 5
-How many VCR's were sold? 4
-How many remote controllers were sold? 5
-How many CD's were sold? 4
-How many tape recorders were sold? 5
+SET 1:
 
-	QTY	DESCRIPTION	     UNIT PRICE	   TOTAL PRICE
-	 5	TV's            	400.00		2000.00
-	 5	VCR's           	220.00		880.00
-	 5	Remote Controllers	35.20		176.00
-	 5	CD's            	300.00		1200.00
-	 5	Tape Recorders  	150.00		750.00
+How many TV's were sold? 2
+How many VCR's were sold? 1
+How many remote controllers were sold? 4
+How many CD's were sold? 1
+How many tape recorders were sold? 2
 
-			             SUBTOTAL: 		5006.00
-			                  TAX: 		425.51
-			           GRANDTOTAL: 		5006.08
+	QTY	DESCRIPTION	     UNIT PRICE	      TOTAL PRICE
+	 2	TV's            	400.00		800.00
+	 2	VCR's           	220.00		220.00
+	 2	Remote Controllers	35.20		140.80
+	 2	CD's            	300.00		300.00
+	 2	Tape Recorders  	150.00		300.00
+
+			             SUBTOTAL: 		1760.80
+			                  TAX: 		149.67
+			           GRANDTOTAL: 		1760.89
+
+SET 2:
+
+How many TV's were sold? 3
+How many VCR's were sold? 0
+How many remote controllers were sold? 2
+How many CD's were sold? 0
+How many tape recorders were sold? 21
+
+	QTY	DESCRIPTION	     UNIT PRICE	      TOTAL PRICE
+	 3	TV's            	400.00		1200.00
+	 3	VCR's           	220.00		0.00
+	 3	Remote Controllers	35.20		70.40
+	 3	CD's            	300.00		0.00
+	 3	Tape Recorders  	150.00		3150.00
+
+			             SUBTOTAL: 		4420.40
+			                  TAX: 		375.73
+			           GRANDTOTAL: 		4420.48
