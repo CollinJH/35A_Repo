@@ -9,8 +9,8 @@ Submitted   04-14-2023 <br>
 <p> This program uses procedural programming to take input from a user, <br>
 then makes calculations with a celicus to fahrenheit formula and vice versa </p>
 
-<p>To use the program <br>
-    1. compile Part2.java <br>
+<h3> To use the program </h3> <br>
+<p> 1. compile Part2.java <br>
     2. input value for centigrade to convert <br>
     3. program will output converted to fahrenheit <br>
     4. input value for fahrenheit to convert <br>

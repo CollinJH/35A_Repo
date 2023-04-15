@@ -10,7 +10,8 @@ This program focuses procedural programming, variable types, formatted outputs, 
 
 The program creates a customer's bill for a company that sells five different products with their each individual price. <br> <br>
 
-<p> To use the program <br>
+<h3> To use the program </h3> <br>
+<p>
     1. compile the Part1.java class file to execute <br>
     2. the program will ask you for quantity purchased for each item <br>
     3. after entering quantity of items, the program will calculate the price total of each, subtotal, tax, and grandtotal <br>
