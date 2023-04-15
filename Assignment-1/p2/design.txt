@@ -1,9 +1,49 @@
+
+Collin      Hargreaves
+CIS 35A 	     00441
+Assignment          -1
+Due         04-19-2023
+Submitted   04-14-2023
+
+Prompt - 
+
+The formula for converting centigrade temperature to Fahrenheit is: 
+ 
+F = 32 + C (180.0/100.0) 
+ 
+Write a program that asks the user to enter a temperature reading in Centigrade and then prints the equivalent Fahrenheit value. 
+It then asks the user to enter a Fahrenheit value and prints out the equivalent Centigrade value. 
+Run the program several times. Be sure to include at least one negative temperature reading in your test cases. 
+
 Design
+
+takes in centigrade temperature input from user and outputs the fahrenheit value
+takes in fahrenheit temperature input from user and outputs centigrade value
 
 Variables
 
+    (double) variable to keep track of user input
+    (double) variables to keep track of fahrenheit and centigrade result values
+
 Input
+
+    using scanner
+    sysout("Enter a centigrade value to convert to fahrenheit")
+    userInput = scanner.nextInt() to store first value
+
+    second prompt will happen after 1st calculation
+
+    sysout("Enter a fahrenheit value to convert to centigrade")
+    userInput = scanner.nextInt() to store second value
 
 Processing
 
+    apply userinput to formula
+    F = 32 + C * (180.0/100.0)
+    or
+    C = F * (100.0/180.0) - 32
+
+
 Printing
+
+    sysout conveted values

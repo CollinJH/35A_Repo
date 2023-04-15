@@ -1,0 +1,21 @@
+Collin      Hargreaves
+CIS 35A 	     00441
+Assignment          -1
+Due         04-19-2023
+Submitted   04-14-2023
+
+Test Output From Console - 
+
+Test 1 - Random Values
+
+Converting Centigrade to Fahrenheit
+
+Please enter degrees in Centigrade: 54
+Converted into Fahrenheit: 129.20
+
+Converting Fahrenheight to Centigrade
+
+Please enter degrees in Fahrenheit: 23
+Fahrenheit converted into Centigrade: -5.00
+
+Test 2 - Convert Back and Forth
