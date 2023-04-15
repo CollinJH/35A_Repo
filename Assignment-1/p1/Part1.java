@@ -1,34 +1,9 @@
 /*
-Write a program to create a customer's bill for a company. The company sells only five different products: TV, VCR, Remote Controller, CD Player and Tape Recorder.
- The unit prices are $400.00, $220, $35.20, $300.00 and $150.00 respectively.
-  The program must read the quantity of each piece of equipment purchased from the keyboard.
-   It then, calculates the cost of each item, the subtotal and the total cost after an 8.25% sales tax.
-    The input data consists of a set of integers representing the quantities of each item sold. These integers must be input into the program in a user- friendly way; that is,
-     the program must prompt the user for each quantity as shown below - 
- 
-How many TV's were sold? 3 
-How many VCR's were sold? 5 
-How many remote controller's were sold? 1 
-How many CD's were sold? 2 
-How many Tape Recorder's were sold? 4 
- 
-The output of the program should print the following data properly formatted: 
- 
-        QTY  DESCRIPTION  UNIT PRICE  TOTAL PRICE 
- 
-             ...
- 
-                            SUBTOTAL 
-                                 TAX 
-                               TOTAL 
- 
-Define constants for the unit prices and the tax rate. Use integer variables to store the quantities for each item. Use floating-point variables to store the total price of each item, the bill subtotal, the tax amount and and the total amount of the bill. Run your program two times with the following data: 
- 
- 
-Set 1 -> 2 1 4 1 2 
-Set 2 -> 3 0 2 0 21 
- 
-Format the output adequately showing the 4 columns (QTY, DESCRIPTION, UNIT PRICE, TOTAL PRICE) in a single row. Use System.out.printf for output.
+Collin      Hargreaves
+CIS 35A 	       00441
+Assignment          -1
+Due         04-19-2023
+Submitted   04-14-2023
  */
 import java.util.Scanner;
 
@@ -68,7 +43,7 @@ import java.util.Scanner;
           
            Scanner myScanner = new Scanner(System.in); // Create scanner object
 
-
+          // prompt user for each product and store input
           System.out.printf("How many TV's were sold? ");
           quantityTV = myScanner.nextInt();
           System.out.printf("How many VCR's were sold? ");
@@ -83,27 +58,34 @@ import java.util.Scanner;
  
           // PROCESSING
 
+          // calculate totals by quantity * price
           totalTV = quantityTV * priceTV;
           totalVCR = quantityVCR * priceVCR;
           totalRmtCnt = quantityRmtCnt * priceRmtCnt;
           totalCD = quantityCD * priceCD;
           totalTapeRec = quantityTapeRec * priceTapeRec;
 
+          // calculate subtotal, tax amount, and grandtotal
+
           total = totalTV + totalVCR + totalRmtCnt + totalCD + totalTapeRec;
           totalTax = total * tax;
           grandTotal = total + tax;
 
           // PRINTING
-          // Header
-          System.out.printf("\t%2s\t%-16s%16s\t%s\n", "Qty", "Description", "Unit Price", "Total Price");
-          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "TV's", priceTV, "   ", totalTV);
-          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "VCR's", priceVCR, "   ", totalVCR);
-          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "Remote Controllers", priceRmtCnt, "   ", totalRmtCnt);
-          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n", quantityTV, "CD's", priceCD,"   ", totalCD);
-          System.out.printf("\t%2d\t%-16s\t%.2f\t%2s\t%.2f\n\n", quantityTV, "Tape Recorders", priceTapeRec, "   ", totalTapeRec);
-          System.out.printf("\t\t\t%23s\t\t%.2f\n", "Subtotal: ", total);
-          System.out.printf("\t\t\t%23s\t\t%.2f\n", "Tax: ", totalTax);
-          System.out.printf("\t\t\t%23s\t\t%.2f\n", "GrandTotal: ", grandTotal);
+          // print header
+          System.out.printf("\n\t%2s\t%2s\t%15s\t%17s\n", "QTY", "DESCRIPTION", "UNIT PRICE", "TOTAL PRICE");
+
+          // output quantity purchased, product name, price, and total
+          System.out.printf("\t%2d\t%-16s\t%.2f\t\t%.2f\n", quantityTV, "TV's", priceTV, totalTV);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t\t%.2f\n", quantityTV, "VCR's", priceVCR, totalVCR);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t\t%.2f\n", quantityTV, "Remote Controllers", priceRmtCnt, totalRmtCnt);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t\t%.2f\n", quantityTV, "CD's", priceCD, totalCD);
+          System.out.printf("\t%2d\t%-16s\t%.2f\t\t%.2f\n\n", quantityTV, "Tape Recorders", priceTapeRec, totalTapeRec);
+
+          // output subtotal, tax, and grandtotal
+          System.out.printf("\t\t\t%23s\t\t%.2f\n", "SUBTOTAL: ", total);
+          System.out.printf("\t\t\t%23s\t\t%.2f\n", "TAX: ", totalTax);
+          System.out.printf("\t\t\t%23s\t\t%.2f\n", "GRANDTOTAL: ", grandTotal);
 
 
           myScanner.close();
