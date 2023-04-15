@@ -1,3 +1,12 @@
+
+/*
+Collin      Hargreaves
+CIS 35A 	     00441
+Assignment          -1
+Due         04-19-2023
+Submitted   04-14-2023
+*/
+
 import java.util.Scanner;
 
 public class Part2 {
@@ -38,10 +47,8 @@ public class Part2 {
         //OUTPUT 2
 
         System.out.printf("%s%.2f\n", "Fahrenheit converted into Centigrade: ", celcius);
-
-
-
-
+        
+        // close scanner
 
         myScanner.close();
 
