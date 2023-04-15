@@ -1,16 +1,18 @@
-Collin      Hargreaves
-CIS 35A 	     00441
-Assignment          -1
-Due         04-19-2023
-Submitted   04-14-2023
+Collin      Hargreaves <br>
+CIS 35A 	     00441 <br>
+Assignment          -1 <br>
+Due         04-19-2023 <br>
+Submitted   04-14-2023 <br>
 
-This program uses procedural programming to take input from a user
-to make calculations with a celicus to fahrenheit formula and vice versa
+<h2> Part 2 - Temperature Converter </h2>
 
-To use the program
-    1. compile Part2.java 
-    2. input value for centigrade to convert
-    3. program will output converted to fahrenheit
-    4. input value for fahrenheit to convert
-    5. program will output converted to celcius
+<p> This program uses procedural programming to take input from a user, <br>
+then makes calculations with a celicus to fahrenheit formula and vice versa </p>
+
+<p>To use the program <br>
+    1. compile Part2.java <br>
+    2. input value for centigrade to convert <br>
+    3. program will output converted to fahrenheit <br>
+    4. input value for fahrenheit to convert <br>
+    5. program will output converted to celcius </p>
 
