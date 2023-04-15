@@ -88,7 +88,7 @@ import java.util.Scanner;
           System.out.printf("\t\t\t%23s\t\t%.2f\n", "TAX: ", totalTax);
           System.out.printf("\t\t\t%23s\t\t%.2f\n", "GRANDTOTAL: ", grandTotal);
 
-
+          // close scanner
           myScanner.close();
 
 
