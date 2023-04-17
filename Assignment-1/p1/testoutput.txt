@@ -14,7 +14,7 @@ How many remote controllers were sold? 4
 How many CD's were sold? 1
 How many tape recorders were sold? 2
 
-	QTY	DESCRIPTION	     UNIT PRICE	      TOTAL PRICE
+	QTY	DESCRIPTION	     UNIT PRICE	 TOTAL PRICE
 	 2	TV's            	400.00		800.00
 	 2	VCR's           	220.00		220.00
 	 2	Remote Controllers	35.20		140.80
@@ -33,7 +33,7 @@ How many remote controllers were sold? 2
 How many CD's were sold? 0
 How many tape recorders were sold? 21
 
-	QTY	DESCRIPTION	     UNIT PRICE	      TOTAL PRICE
+	QTY	DESCRIPTION	     UNIT PRICE	  TOTAL PRICE
 	 3	TV's            	400.00		1200.00
 	 3	VCR's           	220.00		0.00
 	 3	Remote Controllers	35.20		70.40
