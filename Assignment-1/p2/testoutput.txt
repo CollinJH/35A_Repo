@@ -9,35 +9,32 @@ Test Output From Console -
 TEST 1 - Random Values
 
 Converting Centigrade to Fahrenheit
-
 Please enter degrees in Centigrade: 54
 Converted into Fahrenheit: 129.20
 
 Converting Fahrenheight to Centigrade
+Please enter degrees in Fahrenheit: 35
+Fahrenheit converted into Centigrade: 1.67
 
-Please enter degrees in Fahrenheit: 23
-Fahrenheit converted into Centigrade: -5.00
 
 TEST 2 - Convert Back and Forth
 
 Converting Centigrade to Fahrenheit
-
-Please enter degrees in Centigrade: 30
-Converted into Fahrenheit: 86.00
+Please enter degrees in Centigrade: 32
+Converted into Fahrenheit: 89.60
 
 Converting Fahrenheight to Centigrade
+Please enter degrees in Fahrenheit: 89.60
+Fahrenheit converted into Centigrade: 32.00
 
-Please enter degrees in Fahrenheit: 86
-Fahrenheit converted into Centigrade: 30.00
 
 TEST 3 - Negative Values
 
 Converting Centigrade to Fahrenheit
-
 Please enter degrees in Centigrade: -32
 Converted into Fahrenheit: -25.60
 
 Converting Fahrenheight to Centigrade
+Please enter degrees in Fahrenheit: -25.60
+Fahrenheit converted into Centigrade: -32.00
 
-Please enter degrees in Fahrenheit: -32
-Fahrenheit converted into Centigrade: -35.56

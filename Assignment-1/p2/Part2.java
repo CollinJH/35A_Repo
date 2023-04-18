@@ -22,7 +22,7 @@ public class Part2 {
 
         Scanner myScanner = new Scanner(System.in);
 
-        System.out.println("\nConverting Centigrade to Fahrenheit\n");
+        System.out.printf("\nConverting Centigrade to Fahrenheit\n");
         System.out.printf("Please enter degrees in Centigrade: ");
         userInput = myScanner.nextDouble();
 
@@ -36,7 +36,7 @@ public class Part2 {
 
         //INPUT 2
 
-        System.out.println("\nConverting Fahrenheight to Centigrade\n");
+        System.out.printf("\nConverting Fahrenheight to Centigrade\n");
         System.out.printf("Please enter degrees in Fahrenheit: ");
         userInput = myScanner.nextDouble();
 
