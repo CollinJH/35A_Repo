@@ -1,10 +1,8 @@
-package Assignment1.p1;
+package p1;
 
-public class Part1 {
-
-
+public class PartOne {
     public static void main(String[] args) {
         
     }
-
+    
 }

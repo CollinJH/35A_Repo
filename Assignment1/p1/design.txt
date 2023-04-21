@@ -1,0 +1,16 @@
+Prompt - 
+
+The monthly payment for a given loan pays the principal and the interest.
+The monthly interest is computed by multiplying the monthly interest rate and the balance (the remaining principle). 
+The principal paid for the month is therefore the monthly payment minus the monthly interest.
+
+Write a program that lets the user enter the loan amount, number of years, the interest rate, 
+and displays the amortization schedule for the loan.
+
+write a loop to display the table. since the monthly payment is the same for each month, 
+it should be computed before the loop. the balance is initially the loan amount. 
+For each iteration in the loop, computer the interest and principal and update the balance. 
+
+The loop may look like this:
+
+
