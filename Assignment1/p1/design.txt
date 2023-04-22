@@ -9,8 +9,39 @@ and displays the amortization schedule for the loan.
 
 write a loop to display the table. since the monthly payment is the same for each month, 
 it should be computed before the loop. the balance is initially the loan amount. 
-For each iteration in the loop, computer the interest and principal and update the balance. 
+For each iteration in the loop, computer the interest and principal and update the balance.
+
+annualInterestRate = annualInterestRate / 100;
+i = monthlyInterestRate = annualInterestRate / 12;
+n = numberOfYear * 12;
+monthlyPayment = (loanAmount * i * Math.pow(i + 1, n)) / (Math.pow(i + 1, n) - 1);
+totalPayment = monthlyPayment * 12;
 
 The loop may look like this:
+
+Design
+
+Variables
+    
+    Declaring variables
+
+    Variables user will enter
+    int loanYears
+    int loanAmount
+    int annualInterestRate
+
+    double monthlyPayment
+    double totalAmount
+
+
+
+
+Input
+
+Processing
+
+Printing
+
+
 
 
