@@ -1,0 +1,30 @@
+
+
+
+
+data set: 10000, 1, 12
+
+Enter Loan Amount: 10000
+Enter Loan Length: 1
+Enter Interest Rate: 12
+
+Monthly Payment: 888.49
+
+Total Amount: 10661.85
+
+       Payment#       Interest      Principal       Balance
+           0          106.62          781.87        9879.99
+           1           98.80          789.69        9090.30
+           2           90.90          797.58        8292.71
+           3           82.93          805.56        7487.15
+           4           74.87          813.62        6673.54
+           5           66.74          821.75        5851.78
+           6           58.52          829.97        5021.81
+           7           50.22          838.27        4183.54
+           8           41.84          846.65        3336.89
+           9           33.37          855.12        2481.77
+          10           24.82          863.67        1618.10
+          11           16.18          872.31         745.79
+          12            7.46          881.03           0.00
+
+With a remainder of 135.24 from your last payment

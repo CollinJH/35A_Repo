@@ -1,15 +1,7 @@
 package p1;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
-import java.math.*;
-
-/*
- * annualInterestRate = annualInterestRate / 100;
-i = monthlyInterestRate = annualInterestRate / 12;
-n = numberOfYear * 12;
-monthlyPayment = (loanAmount * i * Math.pow(i + 1, n)) / (Math.pow(i + 1, n) - 1);
-totalPayment = monthlyPayment * 12;
- */
 
 public class PartOne {
     public static void main(String[] args) {
@@ -17,18 +9,17 @@ public class PartOne {
         // Data Segment
         int loanAmount;
         int loanYears;
-        double n;
+   
         double annualInterestRate;
-
         double monthlyInterestRate;
         double monthlyPayment;
         double totalAmount;
-
         
         // Input
+
         Scanner scannerObj = new Scanner(System.in);
 
-        System.out.printf("Enter Loan Amount: ");
+        System.out.printf("\nEnter Loan Amount: ");
         loanAmount = scannerObj.nextInt();
 
         System.out.printf("Enter Loan Length: ");
@@ -37,31 +28,113 @@ public class PartOne {
         System.out.printf("Enter Interest Rate: ");
         annualInterestRate = scannerObj.nextInt();
 
+        // check for valid inputs
+        checkInput(loanAmount, loanYears, annualInterestRate);
+
         // Processing
 
-        annualInterestRate /= 100;
-        monthlyInterestRate = annualInterestRate / 12;
-        n = loanYears * 12;
-        monthlyPayment = (loanAmount * monthlyInterestRate * Math.pow(monthlyInterestRate + 1, n) / (Math.pow(monthlyInterestRate + 1, n) - 1));
-        totalAmount = monthlyPayment * 12;
-
-        // write a loop to calculate the amortization schedule
-        // interest = monthlyinterest * balance
-        // principal = monthlypayment - interest
-        // balance = balance - principal
-
-        for (int i = 0; i <= loanYears; i++) {
-
-        }
+        // calculate several values to be used in loop
+        monthlyInterestRate = calculateMonthlyInterest(annualInterestRate);
+        monthlyPayment = calculateMonthlyPayment(loanAmount, monthlyInterestRate, loanYears);
+        totalAmount = calculateTotalAmount(monthlyPayment);
 
         // Printing
 
-        // print out header
-        System.out.printf("%5s%5s%5s%5s", "Payment#", "Interest", "Principal", "Balance");
+        // printing out monthly payment and total amount owed
+        printBoth(monthlyPayment, totalAmount);
+        printHeader();
 
-
-
+        // generate final amortization schedule
+        generateAmortizationSchedule(loanYears, monthlyInterestRate, monthlyPayment, totalAmount);
         
+    }
+
+    // method to check user input for negative values
+    public static void checkInput(int amount, int year, double interest) {
+        if (amount < 0) {
+            throw new InputMismatchException("Loan Amount cannot be negative");
+        } 
+        if (year < 0) {
+            throw new InputMismatchException("Loan Years cannot be negative");
+        }
+        if (interest < 0) {
+            throw new InputMismatchException("Loan Interest Rate cannot be negative");
+        }
+    }
+
+    // method to calculate monthly interest rate
+    public static double calculateMonthlyInterest(double annualInterestRate) {
+
+        double monthlyInterestRate;
+
+        annualInterestRate /= 100;
+        monthlyInterestRate = annualInterestRate / 12;
+        
+        return monthlyInterestRate;
+    }
+    // method to calculate monthly payment
+    public static double calculateMonthlyPayment(double loanAmount, double monthlyInterestRate, double loanYears) {
+
+        double monthlyPayment;
+        double loanMonths;
+        double i;
+
+        i = monthlyInterestRate;
+        loanMonths = loanYears * 12;
+        monthlyPayment = (loanAmount * i) / (1 - Math.pow(1 + i, (-1 * loanMonths)));
+
+        return monthlyPayment;
+    }
+
+    // method to calculate total balance
+    public static double calculateTotalAmount(double monthlyPayment) {
+        double totalAmount;
+
+        totalAmount = monthlyPayment * 12;
+
+        return totalAmount;
+    }
+
+    // printing method for monthly payment and total balance
+    public static void printBoth(double monthlyPayment, double totalAmount) {
+        System.out.printf("%s%.2f%s", "\nMonthly Payment: ", monthlyPayment, "\n\n");
+        System.out.printf("%s%.2f%s", "Total Amount: ", totalAmount, "\n\n");
+    }
+
+    // printing method for a header
+    public static void printHeader() {
+        System.out.printf("%15s%15s%15s%15s", "Payment#", "Interest", "Principal", "Balance\n");
+    }
+
+    // write a loop to calculate the amortization schedule
+    // if balance is 0 print final payment, and show amount owed back to customer
+    public static void generateAmortizationSchedule(int loanYears, double monthlyInterestRate, double monthlyPayment, double totalAmount) {
+
+        double balance;
+        double interest;
+        double remainder;
+        double principal;
+
+        balance = totalAmount;
+
+        for (int i = 0; i <= loanYears * 12; i++) {
+            interest = monthlyInterestRate * balance;
+            principal = monthlyPayment - interest;
+            balance = balance - principal;
+            if (balance <= 0) {
+                remainder = balance;
+                remainder = remainder * (-1);
+                balance = 0.0;
+                
+                System.out.printf("%12d%16.2f%16.2f%15.2f%s", i, interest, principal, balance, "\n");
+                System.out.printf("%s%.2f%s", "\nWith a remainder of ",remainder, " from your last payment\n");
+            } else {
+            System.out.printf("%12d%16.2f%16.2f%15.2f%s", i, interest, principal, balance, "\n");
+            }
+
+
+        }
+
     }
     
 }
