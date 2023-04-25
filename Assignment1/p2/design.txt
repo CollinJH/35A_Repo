@@ -1,0 +1,27 @@
+Collin      Hargreaves
+CIS 35A 	     00441
+Assignment           1
+Due         04-26-2023
+Submitted   
+
+Math approximate the square root
+
+There are severial techniques for implementing
+the sqrt method in the math class.
+one such technique is known as the babylonian method
+it approximates the square root of a number, n
+by repeatedly performaing a caluclation Using
+
+nextGuess = (lastGuess + n/ lastGuess) / 2
+
+when nextGuess and lastGuess are almost identical 
+nextGuess is the approximated square root.
+The initial guess can be any positive value (1)
+this value will be starting value for lastGuess
+If the difference between nextGuess and lastGuess is less than a very small number
+such as 0.0001 you can claim that nextGuess is the approximated square root of of n
+if not nextGuess becomes lastGuess and the approximation process continues
+
+implement the following method that returns the square root of negative
+
+public static double sqrt(long n)

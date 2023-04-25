@@ -1,3 +1,11 @@
+/*
+Collin      Hargreaves
+CIS 35A 	     00441
+Assignment           1
+Due         04-26-2023
+Submitted   
+*/
+
 package p1;
 
 import java.util.InputMismatchException;
@@ -29,14 +37,15 @@ public class PartOne {
         annualInterestRate = scannerObj.nextInt();
 
         // check for valid inputs
-        checkInput(loanAmount, loanYears, annualInterestRate);
+        
+        checkInputValue(loanAmount, loanYears, annualInterestRate);
 
         // Processing
 
         // calculate several values to be used in loop
         monthlyInterestRate = calculateMonthlyInterest(annualInterestRate);
         monthlyPayment = calculateMonthlyPayment(loanAmount, monthlyInterestRate, loanYears);
-        totalAmount = calculateTotalAmount(monthlyPayment);
+        totalAmount = calculateTotalAmount(monthlyPayment, loanYears);
 
         // Printing
 
@@ -46,11 +55,13 @@ public class PartOne {
 
         // generate final amortization schedule
         generateAmortizationSchedule(loanYears, monthlyInterestRate, monthlyPayment, totalAmount);
+
+        scannerObj.close();
         
-    }
+    } // end main method
 
     // method to check user input for negative values
-    public static void checkInput(int amount, int year, double interest) {
+    public static void checkInputValue(int amount, int year, double interest) {
         if (amount < 0) {
             throw new InputMismatchException("Loan Amount cannot be negative");
         } 
@@ -61,6 +72,8 @@ public class PartOne {
             throw new InputMismatchException("Loan Interest Rate cannot be negative");
         }
     }
+
+
 
     // method to calculate monthly interest rate
     public static double calculateMonthlyInterest(double annualInterestRate) {
@@ -76,21 +89,23 @@ public class PartOne {
     public static double calculateMonthlyPayment(double loanAmount, double monthlyInterestRate, double loanYears) {
 
         double monthlyPayment;
-        double loanMonths;
-        double i;
+        double i = monthlyInterestRate;
+        double n = loanYears * 12;
 
-        i = monthlyInterestRate;
-        loanMonths = loanYears * 12;
-        monthlyPayment = (loanAmount * i) / (1 - Math.pow(1 + i, (-1 * loanMonths)));
+        
 
+        monthlyPayment = (loanAmount * i * Math.pow(i + 1, n)) / (Math.pow(i + 1, n) - 1);
+        
         return monthlyPayment;
     }
 
     // method to calculate total balance
-    public static double calculateTotalAmount(double monthlyPayment) {
+    public static double calculateTotalAmount(double monthlyPayment, double loanYears) {
         double totalAmount;
+        double loanMonths;
 
-        totalAmount = monthlyPayment * 12;
+        loanMonths = loanYears * 12;
+        totalAmount = monthlyPayment * loanMonths;
 
         return totalAmount;
     }
@@ -131,6 +146,8 @@ public class PartOne {
             } else {
             System.out.printf("%12d%16.2f%16.2f%15.2f%s", i, interest, principal, balance, "\n");
             }
+
+
 
 
         }

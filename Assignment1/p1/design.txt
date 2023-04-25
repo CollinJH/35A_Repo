@@ -1,23 +1,8 @@
-Prompt - 
-
-The monthly payment for a given loan pays the principal and the interest.
-The monthly interest is computed by multiplying the monthly interest rate and the balance (the remaining principle). 
-The principal paid for the month is therefore the monthly payment minus the monthly interest.
-
-Write a program that lets the user enter the loan amount, number of years, the interest rate, 
-and displays the amortization schedule for the loan.
-
-write a loop to display the table. since the monthly payment is the same for each month, 
-it should be computed before the loop. the balance is initially the loan amount. 
-For each iteration in the loop, computer the interest and principal and update the balance.
-
-annualInterestRate = annualInterestRate / 100;
-i = monthlyInterestRate = annualInterestRate / 12;
-n = numberOfYear * 12;
-monthlyPayment = (loanAmount * i * Math.pow(i + 1, n)) / (Math.pow(i + 1, n) - 1);
-totalPayment = monthlyPayment * 12;
-
-The loop may look like this:
+Collin      Hargreaves
+CIS 35A 	     00441
+Assignment           1
+Due         04-26-2023
+Submitted   
 
 Design
 
@@ -25,20 +10,40 @@ Variables
     
     Declaring variables
 
-    Variables user will enter
-    int loanYears
-    int loanAmount
-    int annualInterestRate
+    Variables 
 
-    double monthlyPayment
-    double totalAmount
-
+    to be used in conjuction with other calculated variables from methods
+        int loanAmount
+        int loanYears
+        double annualInterestRate
+        double monthlyInterestRate
+        double monthlyPayment
+        double totalAmount
 
 
 
 Input
+    Using scanner get input from user
+    loanAmount
+    loanYears
+    annualInterestRate
+
+    Create a method to check if user input is valid
+    passing in the three variables as parameters
+    checkInputValue(loanAmount, loanYears, annualInterestRate)
+        check if input is negative
+    
 
 Processing
+
+    Method to calculate monthly interest
+    calculateMonthyInterest
+        double monthlyInterestRate
+
+
+
+    Method to calculate monthly payment
+    calculateMonthlyPayment
 
 Printing
 

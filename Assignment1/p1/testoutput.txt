@@ -1,4 +1,8 @@
-
+Collin      Hargreaves
+CIS 35A 	     00441
+Assignment           1
+Due         04-26-2023
+Submitted   
 
 
 
@@ -28,3 +32,13 @@ Total Amount: 10661.85
           12            7.46          881.03           0.00
 
 With a remainder of 135.24 from your last payment
+
+dataset -5000, 2, 1
+(should not work with negative numbers)
+
+Enter Loan Amount: -5000
+Enter Loan Length: 2
+Enter Interest Rate: 1
+Exception in thread "main" java.util.InputMismatchException: Loan Amount cannot be negative
+	at p1.PartOne.checkInput(PartOne.java:56)
+	at p1.PartOne.main(PartOne.java:34)
