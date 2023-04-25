@@ -45,7 +45,22 @@ Processing
     Method to calculate monthly payment
     calculateMonthlyPayment
 
+    Method to calcluate total amount
+
 Printing
+
+    Method to print out monthly payment, and total balance
+    along with header
+
+    Method to print out moritization schedule
+        this method will use a loop that calculates four variables
+        double balance
+        double interest
+        double remainder
+        double principal
+
+        these four variables will be used in the loop and printed out until the balance,
+        or length of loan reaches 0
 
 
 

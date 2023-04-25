@@ -16,7 +16,7 @@ public class PartTwo {
     public static void main(String[] args) {
 
         Scanner myScanner = new Scanner(System.in);
-        double nInput;
+        long nInput;
         double result;
 
         System.out.printf("Enter a square root to approximate: ");
@@ -30,22 +30,21 @@ public class PartTwo {
         
     }
 
-    public static double sqrt(double n) {
+    public static double sqrt(long n) {
         double result;
 
         // initializing first guess with 1
-        double nextGuess;
-        double lastGuess = 10;
+        long lastGuess = 1;
+        long nextGuess = n;
 
-        nextGuess = (lastGuess + n / lastGuess) / 2;
-
-        while (!(nextGuess - lastGuess < 0.0001)) {
-            nextGuess = (lastGuess + n / lastGuess) / 2;
+        while (nextGuess - lastGuess > 0.0001) {
+            nextGuess = (nextGuess + lastGuess) / 2;
+            lastGuess = n / nextGuess;
         }
 
         result = nextGuess;
 
-        return result;
+		return result;
     }
     
 }

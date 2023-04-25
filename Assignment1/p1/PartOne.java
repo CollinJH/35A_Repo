@@ -94,7 +94,7 @@ public class PartOne {
 
         
 
-        monthlyPayment = (loanAmount * i * Math.pow(i + 1, n)) / (Math.pow(i + 1, n) - 1);
+        monthlyPayment =  (loanAmount * monthlyInterestRate) / (1-Math.pow(1 + monthlyInterestRate, -n));
         
         return monthlyPayment;
     }
@@ -140,7 +140,6 @@ public class PartOne {
                 remainder = balance;
                 remainder = remainder * (-1);
                 balance = 0.0;
-                
                 System.out.printf("%12d%16.2f%16.2f%15.2f%s", i, interest, principal, balance, "\n");
                 System.out.printf("%s%.2f%s", "\nWith a remainder of ",remainder, " from your last payment\n");
             } else {

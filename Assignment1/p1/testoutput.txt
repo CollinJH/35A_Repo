@@ -4,8 +4,6 @@ Assignment           1
 Due         04-26-2023
 Submitted   
 
-
-
 data set: 10000, 1, 12
 
 Enter Loan Amount: 10000

@@ -25,3 +25,24 @@ if not nextGuess becomes lastGuess and the approximation process continues
 implement the following method that returns the square root of negative
 
 public static double sqrt(long n)
+
+Design
+
+    Variables
+
+    Two variables
+    long Input
+    double result
+
+    Input
+    
+    User will enter a square root to approximate
+
+    Processing
+
+    sqrt method that approximates and returns a result
+        takes in user input n as a parameter
+
+        use babylonian method to approximate
+        while nextGuess - lastGuess > 0.001
+
