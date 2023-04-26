@@ -82,6 +82,8 @@ public class PartOne {
 
         annualInterestRate /= 100;
         monthlyInterestRate = annualInterestRate / 12;
+
+        System.out.println("Monthly Interest Rate = " + monthlyInterestRate);
         
         return monthlyInterestRate;
     }
@@ -94,8 +96,10 @@ public class PartOne {
 
         
 
-        monthlyPayment =  (loanAmount * monthlyInterestRate) / (1-Math.pow(1 + monthlyInterestRate, -n));
+        // monthlyPayment =  (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -n));
+        // monthlyPayment = (loanAmount) * ((monthlyInterestRate * Math.pow(1 + monthlyInterestRate, n))/ (Math.pow(1 + monthlyInterestRate, n) - 1) );
         
+
         return monthlyPayment;
     }
 

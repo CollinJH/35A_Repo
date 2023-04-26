@@ -37,13 +37,8 @@ Input
 Processing
 
     Method to calculate monthly interest
-    calculateMonthyInterest
-        double monthlyInterestRate
-
-
 
     Method to calculate monthly payment
-    calculateMonthlyPayment
 
     Method to calcluate total amount
 

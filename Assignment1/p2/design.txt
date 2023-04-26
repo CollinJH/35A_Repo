@@ -46,3 +46,8 @@ Design
         use babylonian method to approximate
         while nextGuess - lastGuess > 0.001
 
+
+    Printing
+
+    print out formatted result
+
