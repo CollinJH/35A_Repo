@@ -3,7 +3,7 @@ Collin      Hargreaves
 CIS 35A 	     00441
 Assignment           1
 Due         04-26-2023
-Submitted   
+Submitted   04-26-2023
 */
 
 package p1;
@@ -14,7 +14,7 @@ import java.util.Scanner;
 public class PartOne {
     public static void main(String[] args) {
 
-        // Data Segment
+        // DATA SEGMENT
         int loanAmount;
         int loanYears;
    
@@ -23,7 +23,7 @@ public class PartOne {
         double monthlyPayment;
         double totalAmount;
         
-        // Input
+        // INPUT
 
         Scanner scannerObj = new Scanner(System.in);
 
@@ -40,21 +40,21 @@ public class PartOne {
         
         checkInputValue(loanAmount, loanYears, annualInterestRate);
 
-        // Processing
+        // PROCESSING
 
         // calculate several values to be used in loop
         monthlyInterestRate = calculateMonthlyInterest(annualInterestRate);
         monthlyPayment = calculateMonthlyPayment(loanAmount, monthlyInterestRate, loanYears);
         totalAmount = calculateTotalAmount(monthlyPayment, loanYears);
 
-        // Printing
+        // PRINTING
 
         // printing out monthly payment and total amount owed
         printBoth(monthlyPayment, totalAmount);
         printHeader();
 
-        // generate final amortization schedule
-        generateAmortizationSchedule(loanYears, monthlyInterestRate, monthlyPayment, totalAmount);
+        // GENERATE FINAL AMORTIZATION SCHEDULE
+        generateAmortizationSchedule(loanYears, monthlyInterestRate, monthlyPayment, loanAmount);
 
         scannerObj.close();
         
@@ -82,8 +82,6 @@ public class PartOne {
 
         annualInterestRate /= 100;
         monthlyInterestRate = annualInterestRate / 12;
-
-        System.out.println("Monthly Interest Rate = " + monthlyInterestRate);
         
         return monthlyInterestRate;
     }
@@ -91,13 +89,11 @@ public class PartOne {
     public static double calculateMonthlyPayment(double loanAmount, double monthlyInterestRate, double loanYears) {
 
         double monthlyPayment;
-        double i = monthlyInterestRate;
-        double n = loanYears * 12;
+        double loanMonths = loanYears * 12;
 
         
 
-        // monthlyPayment =  (loanAmount * monthlyInterestRate) / (1 - Math.pow(1 + monthlyInterestRate, -n));
-        // monthlyPayment = (loanAmount) * ((monthlyInterestRate * Math.pow(1 + monthlyInterestRate, n))/ (Math.pow(1 + monthlyInterestRate, n) - 1) );
+        monthlyPayment = loanAmount * monthlyInterestRate / (1 - 1 / Math.pow(1 + monthlyInterestRate, loanMonths));
         
 
         return monthlyPayment;
@@ -127,28 +123,19 @@ public class PartOne {
 
     // write a loop to calculate the amortization schedule
     // if balance is 0 print final payment, and show amount owed back to customer
-    public static void generateAmortizationSchedule(int loanYears, double monthlyInterestRate, double monthlyPayment, double totalAmount) {
+    public static void generateAmortizationSchedule(int loanYears, double monthlyInterestRate, double monthlyPayment, double loanAmount) {
 
         double balance;
         double interest;
-        double remainder;
         double principal;
 
-        balance = totalAmount;
+        balance = loanAmount;
 
-        for (int i = 0; i <= loanYears * 12; i++) {
+        for (int i = 1; i <= loanYears * 12; i++) {
             interest = monthlyInterestRate * balance;
             principal = monthlyPayment - interest;
             balance = balance - principal;
-            if (balance <= 0) {
-                remainder = balance;
-                remainder = remainder * (-1);
-                balance = 0.0;
-                System.out.printf("%12d%16.2f%16.2f%15.2f%s", i, interest, principal, balance, "\n");
-                System.out.printf("%s%.2f%s", "\nWith a remainder of ",remainder, " from your last payment\n");
-            } else {
             System.out.printf("%12d%16.2f%16.2f%15.2f%s", i, interest, principal, balance, "\n");
-            }
 
 
 

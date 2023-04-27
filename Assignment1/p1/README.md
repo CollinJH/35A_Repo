@@ -2,7 +2,7 @@ Collin      Hargreaves
 CIS 35A 	     00441
 Assignment           1
 Due         04-26-2023
-Submitted   
+Submitted   04-26-2023
 
 The following Java Project focuses on variable declaration, expression, input using scanner, output formatting
 decision making, looping, and methods.
