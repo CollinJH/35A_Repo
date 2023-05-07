@@ -1,0 +1,66 @@
+/*
+Collin      Hargreaves
+CIS 35A          00441
+Assignment          2a
+Due         05-08-2023
+Submitted   05-06-2023
+*/
+
+Assignment 2a
+Personal Information Class
+
+Class Person
+
+    instance variables name, address, age, phoneNumber
+    
+    Constructor Public()
+
+    Overloaded Constructor Public(name, address, age, phoneNumber)
+        set name
+        set address
+        set age
+        set phoneNumber
+
+    Getters and Setters
+    
+        setName()
+        setAddress()
+        setAge()
+        setPhoneNumber()
+
+        getName()
+        getAddress
+        getAge()
+        getPhoneNumber()
+
+    Formatted Print Method
+        print()
+
+Class Driver
+
+    Main()
+        Creates objects with readValue()
+        prints out the objects values
+
+    readValue()
+        declare four variables to store data
+            string name
+            string address
+            int age
+            string phoneNumber
+
+        prompt user and store values using scanner
+            Enter Name:
+            name = s1.nextLine()
+            Enter Address:
+            address = s1.nextLine()
+            Enter Age:
+            age = s1.nextInt()
+            Enter Phone Number:
+            phoneNumber = s1.nextLine()
+
+        return value must be new object that initalizes these values
+            return new Person(name, address, age, phoneNumber)
+
+
+

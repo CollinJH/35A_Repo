@@ -1,0 +1,40 @@
+/*
+Collin      Hargreaves
+CIS 35A          00441
+Assignment          2a
+Due         05-08-2023
+Submitted   05-06-2023
+*/
+
+Enter name: Stacey
+Enter address: 918 Wherever St
+Enter age: 19
+Enter phone number: 984-394-3756
+
+Printing values 
+Name: Stacey
+Address: 918 Wherever St
+Age: 19
+Address: 984-394-3756
+
+Enter name: Ross
+Enter address: 883 OverThere Boulevard  
+Enter age: 22
+Enter phone number: 775-304-2293
+
+Printing values 
+Name: Ross
+Address: 883 OverThere Boulevard
+Age: 22
+Address: 775-304-2293
+
+Enter name: Mia
+Enter address: 221 Around Drive
+Enter age: 72
+Enter phone number: 772-182-3940
+
+Printing values 
+Name: Mia
+Address: 221 Around Drive
+Age: 72
+Address: 772-182-3940
