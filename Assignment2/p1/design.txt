@@ -1,0 +1,94 @@
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           2
+Due         05-14-2023
+Submitted   05-14-2023
+
+
+Prompt 
+Design a HumanGenome class that holds the following information: genome name, 
+number of genes in genome, number of chromosomes, number of cells in your body. 
+Write appropriate methods (constructor, getters and setters and print)
+
+Demonstrate the class by writing a program that creates three or more instances of this class 
+(Name the instances using a disney character). 
+You can populate information in each object using Scanner class. 
+Please do not use any personal information as data in the project. 
+
+class GenomeInput {
+    This will be the driver class
+    Create a scanner object to use for Instance method
+
+    static void main(String[] args)
+        Create driver object d1
+        Create three instances of HumanGenome class
+
+        Do Three Times
+            Create a new HumanGenome Object using instance method
+            HumanGenome [name] = d1.readValue()
+            print.[name]
+
+    
+
+
+    Create instance method
+    HumanGenome readValue() {
+        Create four variables to use for GenomeInput
+        String genomeName
+        int numberOfGenes
+        int numberOfChromosomes
+        int numberOfCells
+
+        Prompt user for each input
+        Read into each respective variable using Scanner
+
+        Return new HumanGenome(genomeName, numberOfGenes, numberOfChromosomes, numberOfCells)
+    }
+
+}
+
+class HumanGenome {
+
+    Declare instance variables
+
+    private String genomeName
+    private int numGenes
+    private int numChromosomes
+    private int numCells
+
+    default constructor
+    HumanGenome()
+
+    overloaded constructor
+    HumanGenome(String genomeName, int numGenes, int numChromosomes, int numCells)
+        assign each instance variable to parameter passed to constructor
+
+    Setters
+    setGenomeName(String genomeName) 
+        set genomeName instance variable to passed parameter
+    
+    setNumGenes(int numGenes)
+        set numGenes instance variable to passed parameter
+
+    setNumChromosomes(int numChromosomes)
+        set numChromosomes instance variable to passed parameter
+
+    setNumCells(int numCells)
+        set numCells instance variable to passed parameter
+
+    Getters
+    getGenomeName(String genomeName)
+        return genomeName
+
+    getNumGenes(int numGenes)
+        return numGenes
+
+    getNumChromosomes(int numChromosomes)
+        return numChromosomes
+
+    getNumCells(int numCells)
+        return numCells
+
+    print()
+        output formmated strings of values
+}

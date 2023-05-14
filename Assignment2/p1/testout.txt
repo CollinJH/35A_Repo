@@ -1,0 +1,39 @@
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           2
+Due         05-14-2023
+Submitted   05-14-2023
+
+
+Enter genome name: Mulan
+Enter number of genes: 60000
+Enter number of chromosomes: 46
+Enter number of cells (trillions): 87
+
+Printing Values 
+Genome Name: Mulan
+Number of Genes: 60000
+Number of Chromosomes: 46
+Number of Cells (Trillions): 87
+
+Enter genome name: Snow White
+Enter number of genes: 20000
+Enter number of chromosomes: 46
+Enter number of cells (trillions): 99
+
+Printing Values 
+Genome Name: Snow White
+Number of Genes: 20000
+Number of Chromosomes: 46
+Number of Cells (Trillions): 99
+
+Enter genome name: Jasmine
+Enter number of genes: 55000
+Enter number of chromosomes: 46
+Enter number of cells (trillions): 110
+
+Printing Values 
+Genome Name: Jasmine
+Number of Genes: 55000
+Number of Chromosomes: 46
+Number of Cells (Trillions): 110
