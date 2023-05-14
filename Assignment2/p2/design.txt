@@ -1,0 +1,85 @@
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           2
+Due         05-14-2023
+Submitted   05-14-2023
+
+public class GenoNucleicAcid {
+    This class will act as the driver
+    create static scanner object to use in instance method
+
+    public static void main(String[] args)
+        create new driver object d1
+        create five instances of NucleicAcid
+
+        Do Five Times
+            Create a new NucleicAcid object using instance method
+            NucleicAcid = d1.readValue()
+            print.NucleicAcid
+
+    Create instance method
+    
+    public NucleicAcid readValue()
+        Create four variables to use in return
+        String chemicalName
+        String chemicalFormula
+        float molarMass
+        float Density
+
+        Prompt user for each value and read into each variable using scanner
+
+        return new NucleicAcid object
+
+        return new NucleicAcid(chemicalName, chemicalFormula, molarMass, density)
+
+
+
+}
+
+public class NucleicAcid {
+
+    Declare instance variables
+    String chemicalName
+    String chemicalFormula
+    float molarMass
+    float density
+
+    default constructor
+    NucleicAcid()
+
+    overloaded constructor
+    NucleicAcid(String chemicalName, String ChemicalFormula, float molarMass, float density)
+        Assign each instance variable to each respective parameter
+
+
+    Setters
+
+    setChemicalName()
+        this.chemicalName = chemicalName
+
+    setChemicalFormula()
+        this.chemicalFormula = chemicalFormula
+
+    setMolarMass()
+        this.molarMass = molarMass
+
+    setDensity()
+        this.density = density
+
+    Getters
+
+    getChemicalName()
+        return chemicalName
+
+    getChemicalFormula()
+        return chemicalFormula
+
+    getMolarMass()
+        return molarMass
+
+    getDensity()
+        return density
+
+    print()
+        Print values in a formatted output
+}

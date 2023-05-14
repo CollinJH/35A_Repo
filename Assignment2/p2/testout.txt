@@ -1,0 +1,56 @@
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           2
+Due         05-14-2023
+Submitted   05-14-2023
+
+
+Enter chemical name: Cytosine
+Enter chemical formula: C4H5N3O
+Enter molar mass: 111.1
+Enter density: 1.55
+
+Enter chemical name: Adenine
+Enter chemical formula: C5H5N5
+Enter molar mass: 135.13
+Enter density: 1.6
+
+Enter chemical name: Guanine
+Enter chemical formula: C5H5N5O
+Enter molar mass: 151.13
+Enter density: 2.200
+
+Enter chemical name: Thymine
+Enter chemical formula: C5H6N2O2
+Enter molar mass: 126.115
+Enter density: 1.223
+
+Enter chemical name: Uracil
+Enter chemical formula: C4H4N2O2
+Enter molar mass: 112.08676
+Enter density: 1.32
+
+Cytosine
+    Chemical Formula - C4H5N3O
+    Molar Mass - 111.10 g/mol
+    Density - 1.55 g/cm^3
+
+Adenine
+    Chemical Formula - C5H5N5
+    Molar Mass - 135.13 g/mol
+    Density - 1.60 g/cm^3
+
+Guanine
+    Chemical Formula - C5H5N5O
+    Molar Mass - 151.13 g/mol
+    Density - 2.20 g/cm^3
+
+Thymine
+    Chemical Formula - C5H6N2O2
+    Molar Mass - 126.11 g/mol
+    Density - 1.22 g/cm^3
+
+Uracil
+    Chemical Formula - C4H4N2O2
+    Molar Mass - 112.09 g/mol
+    Density - 1.32 g/cm^3
