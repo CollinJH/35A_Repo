@@ -1,0 +1,116 @@
+/* 
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           3
+Due         05-21-2023
+Submitted   05-21-2023
+*/
+
+/// TEST ONE ///
+Please enter a store to check data on from 1 to 6: 4
+Please select an option from 1 - 8!
+1. Total sales for each week 
+2. Average daily sales for each week 
+3. Total sales for all the weeks 
+4. Average weekly sales 
+5. Week with highest amount in sales 
+6. Week with lowest amount in sales 
+7. Print each option 
+8. Print sales data 
+1
+Total Sales by Week 
+[16459.07, 20654.55, 24917.55, 29180.55, 33443.55]
+For Store: 4
+Continue? Type 1: for yes, Type 2: for no) 
+1
+Please select an option from 1 - 8!
+1. Total sales for each week 
+2. Average daily sales for each week 
+3. Total sales for all the weeks 
+4. Average weekly sales 
+5. Week with highest amount in sales 
+6. Week with lowest amount in sales 
+7. Print each option 
+8. Print sales data 
+7
+Total Sales by Week 
+[16459.07, 20654.55, 24917.55, 29180.55, 33443.55]
+Average Sales by Week 
+[2351.2957, 2950.6501, 3559.6501, 4168.65, 4777.65]
+Total Sales For All Weeks 
+124655.24
+Average Weekly Sales 
+24931.05
+Week With Highest Sales 
+5038.65
+Week With Lowest Sales 
+2159.65
+For Store: 4
+Continue? Type 1: for yes, Type 2: for no) 
+2
+/// TEST ONE ///
+
+/// TEST TWO ///
+Please enter a store to check data on from 1 to 6: 3
+Please select an option from 1 - 8!
+1. Total sales for each week 
+2. Average daily sales for each week 
+3. Total sales for all the weeks 
+4. Average weekly sales 
+5. Week with highest amount in sales 
+6. Week with lowest amount in sales 
+7. Print each option 
+8. Print sales data 
+4
+Average Weekly Sales 
+32045.36
+For Store: 3
+Continue? Type 1: for yes, Type 2: for no) 
+1
+Please select an option from 1 - 8!
+1. Total sales for each week 
+2. Average daily sales for each week 
+3. Total sales for all the weeks 
+4. Average weekly sales 
+5. Week with highest amount in sales 
+6. Week with lowest amount in sales 
+7. Print each option 
+8. Print sales data 
+8
+3563.54 3280.94 3235.98 3277.98 3175.98 3419.98 3618.98 
+3705.98 3792.98 3879.98 3966.98 4053.98 4140.98 4227.98 
+4314.98 4401.98 4488.98 4575.98 4662.98 4749.98 4836.98 
+4923.98 5010.98 5097.98 5184.98 5271.98 5358.98 5445.98 
+5532.98 5619.98 5706.98 5793.98 5880.98 5967.98 6054.98 
+For Store: 3
+Continue? Type 1: for yes, Type 2: for no) 
+2
+/// TEST TWO ///
+
+/// TEST THREE ///
+Please enter a store to check data on from 1 to 6: 23
+You have entered an incorrect store number, try again 
+Please enter a store to check data on from 1 to 6: 22
+You have entered an incorrect store number, try again 
+Please enter a store to check data on from 1 to 6: 2
+Please select an option from 1 - 8!
+1. Total sales for each week 
+2. Average daily sales for each week 
+3. Total sales for all the weeks 
+4. Average weekly sales 
+5. Week with highest amount in sales 
+6. Week with lowest amount in sales 
+7. Print each option 
+8. Print sales data 
+9
+You have entered an incorrect option, try again 
+4
+Average Weekly Sales 
+28391.50
+For Store: 2
+Continue? Type 1: for yes, Type 2: for no) 
+7
+You have entered an incorrect option, try again 
+Continue? Type 1: for yes, Type 2: for no) 
+2
+/// TEST THREE ///

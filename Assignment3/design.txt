@@ -1,0 +1,212 @@
+/* 
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           3
+Due         05-21-2023
+Submitted   05-21-2023
+*/
+
+Write a program that opens the following text file and processes its contents. The program should display the following per store:
+The total sales for each week. (Should print 5 values - one for each week).
+The average daily sales for each week. (Should print 5 values - one for each week).
+The total sales for all the weeks. (Should print 1 value)
+The average weekly sales. (Should print 1 value)
+The week with the highest amount in sales. (Should print 1 week #)
+The week with the lowest amount in sales. (Should print 1 week #)
+The file contains the dollars amount of sales that a retail store made each day for a number of weeks. Each line in the file contains thirty five numbers, which are sales numbers for five weeks. The numbers are separated by space.  Each line in the file represents a separate store.
+
+
+public class Driver
+    main method
+        Create an object of FileIO
+        Create an object of Franchise with FileIO Data
+        Franchise object = FileIO.readData()
+
+        Create new object for UI
+        UI play method will run the rest of the program
+        ui.play(Franchise)
+
+
+public class UI
+    play method
+        Create Scanner object
+        Create variables
+
+        varaibles needed for various input considerations
+        int userPlay
+        boolean reset 
+        int storeChoice
+        int printChoice
+
+        run the calculation method for Franchise object
+        this will go into the store class and analyze all the store Data
+        and calculate the various requirements for the program to work
+
+        Take input from user to select a certain store
+        verify user input is between 1 and 6
+
+        do
+            prompt user to choose between
+                Total sales for each week
+                Average daily sales for each week
+                Total sales for all the weeks
+                Average weekly sales
+                Week with highest amount in sales
+                Week with lowest amount in sales
+                Print each option
+                Print sales data
+
+            verify user input is between 1 and 8
+
+            prompt user if they want to continue using 1 and 2
+            verify user input is 1 or 2
+        while  (if they continue loop back to have user choose again)
+
+
+
+public class Franchise
+
+    Create an array of store objects
+
+    constructor that will assign store to new store object
+
+    // getter
+    
+    getStores
+        return store at if
+
+    // setter 
+
+    setStores
+        set store i to store input
+
+    numberofstores
+        returns length of amount of stores
+
+    calculate
+        loop through stores length
+        analyze each store using function from store class
+
+public class Store
+
+    create variables to use for class
+
+    private float salesbyweek[][]
+	private float totalsalesbyweek[]
+	private float avgsalesbyweek[]
+	private float totalsalesforallweeks
+	private float avgweeklysales
+	private float weekwithhighestsales
+	private float weekwithlowestsales
+
+    some methods provided
+
+    // methods to do calculations
+
+    calctotalsalesbyweek
+        loop through 5 week
+            loop through 7 days
+                sum is equal to salesbyweek
+            totalsalesbyweek at this week = sum
+
+    calcavgsalesbyweek
+        loop through 5 weeks
+            loop through 7 days
+                sum is equal to salesbyweek
+            avgsalesbyweek = sum / 7
+
+    calctotal 
+        loop through 5 weeks
+            loop through 7 days
+                totalsalesforallweeks += salesbyweek
+
+    calcavgweeklysales
+        loop through 5 weeks
+            loop through 7 days
+                avgweeklysales += salesbyweek
+
+            avgsalesbyweek /= 5
+
+    calcweekhighestsales
+        loop through 5 weeks
+            loop through 7 days
+                check if next salesbyweek is greater
+                than weekwithhighestsales
+                if it is greater, set it as next max value
+    
+    calcweekhighestsales
+        loop through 5 weeks
+            loop through 7 days
+                check if next salesbyweek is less
+                than weekwithlowestsales
+                if it is less, set it as next min value
+
+    printTotalSalesByWeek
+        print totalsalesbyweek
+    
+    printAvgSalesByWeek
+        print avgsalesbyweek
+
+    printTotal 
+        print totalsalesforallweeks
+
+    printAvgWeeklySales
+        print avgweeklysales
+
+    printHighestSales
+        print highestsales
+
+    printLowestSales
+        print lowestsales
+
+    printAll 
+        call each print methods
+
+    print
+        take in user choice 
+        switch statement that will print its respective value
+        for the choice the user makes
+
+    analyzeresults
+        call each calculation method
+
+public class FileIO
+
+    String fname this will store the file name
+    boolean DEBUG set to debug mode or node
+
+    FileIO constructor
+    instansiates fname
+
+    // design is based off file interpretation
+
+    readData
+        open file
+        pass opened file to buffer
+        temp variable to read new data into
+        flag for checking end of file
+        while(!eof)
+            read line into a local variable line
+            increment a counter based on line number
+            if line is empty we have reached end of file
+            COUNTER WILL ONLY WORK WITH DEBUG = TRUE
+            if counter is 1
+                line goes into temp variable
+                convert string to integer and create new franchise object
+                show amount of stores
+            if counter is 2
+                do nothing
+            if counter is greater than 2
+                print out reading store, number of weeks read
+                data read
+        return a1 object
+
+    
+    buildStore
+        while loop to cycle through tokens, this will increment week
+        next loop will cycle through the days of the week
+        day loop will loop 7 times then increment to next week
+
+
+
+        
