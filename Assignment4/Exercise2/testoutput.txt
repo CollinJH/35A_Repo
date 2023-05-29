@@ -1,0 +1,41 @@
+/*
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           4
+Due         05-29-2023
+Submitted   05-29-2023
+*/
+
+Test output 
+
+
+Ship Name: The Snailer
+Departure Port: San Francisco
+Arrival Port: South Korea
+Departure Date: 2023-06-05
+Arrival Date: 2023-06-08
+Owner: Collin
+
+Ship Name: ISS HaulsTUFF
+Departure Port: Columbia
+Arrival Port: New York
+Departure Date: 2023-07-05
+Arrival Date: 2023-07-06
+Owner: James Conway
+Cargo Type: Illegal Substances
+Loading Method: Hand
+Number of Cranes: 2
+Contraband: true
+Cargo Value: 2000000000
+
+Ship Name: S.S. Tipton
+Departure Port: San Diego
+Arrival Port: Hawaii
+Departure Date: 2023-06-08
+Arrival Date: 2023-07-09
+Owner: London Tipton
+Ticket Price: 2000.0
+Number of Rooms: 1200
+Buffet Menu: [Grilled Chicken, Protein Shakes, Chicken Curry, Crab Legs, Fried Rice]
+Services: [Massages, Water Slides, Comedy Shows, Unlimited Ocean Watching, Titanic Renactments]
+Cruise Type: Extended Cruise

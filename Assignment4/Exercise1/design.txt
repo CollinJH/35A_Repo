@@ -1,0 +1,95 @@
+/*
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           4
+Due         05-29-2023
+Submitted   05-29-2023
+*/
+
+Prompts
+
+Part 1
+Create a class SavingsAccount. Use a static class variable to store the annualInterestRate for each of the savers. 
+Each object of the class contains a private instance variable savingsBalance indicating the amount the saver currently has on deposit. 
+Provide method calculateMonthlyInterest to calculate the monthly interest by multiplying the balance by annualInterestRate divided by 12; 
+this interest should be added to savingsBalance. Provide a static method modifyInterestRate that sets the annualInterestRate to a new value. 
+Write a driver program to test the class SavingsAccount. Instantiate two different savingsAccount objects, saver1 and saver2, with balances of $2000.00 and $3000.00, respectively. 
+Set annualInterestRate to 4%, then calculate the monthly interest and print the new balances for each of the savers. 
+Then set the annualInterestRate to 5% and calculate the next months interest and print the new balances for each of the savers. 
+ 
+Part 2
+Write another class SpecialSavings that extends SavingsAccount to pay interest of 10% on accounts that have balances that exceed 10K. 
+Also provided methods to deposit and take money out of savings account. 
+Write a driver program to test the class SpecialSavings. 
+Instantiate two different savingsAccount objects, saver1 and saver2, with balances of $2000.00 and $3000.00, respectively. 
+Make a few deposits and withdrawals and show balance and interest earned for each account. 
+
+Going to demonstrate the basic use of polymorphism by creating a savingsAccount class then create another SpecialSavings class
+The Special Savings class with override the calculateMonthlyInterest method
+
+Class SavingsAccount
+
+    protected savingsBalance
+    protected static annualInterestRate
+
+    Constructor()
+        constructor will take in balance as a parameter 
+        and instantiate the protected savingsBalance variable
+
+    calculateMonthlyInterest()
+        calculates monthly interest
+        assigns monthly interest to the balance * monthly interest rate
+        adds this interest to savings balance
+
+    modifyInterestRate()
+        method to set new annual interest rate
+    
+    getters and setters for savings balance
+
+    depositMoney()
+        adds a deposit of money to the balance
+
+    withdrawMoney()
+        tries to withdraw money from balance
+        won't allow if the user tries to withdraw too much
+
+
+Class SpecialSavings extends SavingsAccount
+
+    special savings account that adds 10% interest to balances
+    if their account balance is over 10000
+
+    private static interest rate that is 10%
+    private static special balance 10000
+
+    constructor()
+        only calls parent constructor
+
+    override method
+    calculateMonthlyInterest()
+        if savings balance is greater than special balance
+        add 10% interest to balance
+
+
+
+Class Driver and DriverTwo
+
+    Demonstrates the use of each individual class
+
+
+boolean floating
+int capacity
+int length
+int width
+String name
+int height
+String departurePort
+String arrivalPort
+String departureDate
+String arrivalDate
+String owner
+
+
+
+
+

@@ -1,0 +1,38 @@
+/*
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           4
+Due         05-29-2023
+Submitted   05-29-2023
+*/
+
+Test outputs
+
+Test 1 for Driver
+
+Saver 1 Balance: 2006.67
+Saver 2 Balance: 3010.00
+Saver 1 Balance: 2015.03
+Saver 2 Balance: 3022.54
+
+Test 2 for DriverTwo
+
+Saver 1 Balance: 12100.00
+Saver 2 Balance: 2510.42
+
+Calcuating Monthly Interest for 5 months... 
+
+Saver 1 Balance: 8635.83
+Saver 2 Balance: 3725.88
+
+Saver 1 Balance: 8671.82
+Saver 2 Balance: 3741.40
+
+Saver 1 Balance: 8707.95
+Saver 2 Balance: 3756.99
+
+Saver 1 Balance: 8744.23
+Saver 2 Balance: 3772.64
+
+Saver 1 Balance: 8780.67
+Saver 2 Balance: 3788.36

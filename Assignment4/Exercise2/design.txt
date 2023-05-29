@@ -1,0 +1,108 @@
+/*
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           4
+Due         05-29-2023
+Submitted   05-29-2023
+*/
+
+Design a Ship, CargoShip and CruiseShip class 
+being mindful of behavior of each. 
+Demonstrate the classes in a program that has a Ship array. 
+Assign various Ships, CruiseShip and CargoShip to the array elements.
+CargoShip and CruiseShip are a child of Ship class.
+
+Class Ship
+
+    private boolean floating
+    private int capacity
+    private int length
+    private int width
+    private String name
+    private int height
+    private String departurePort
+    private String arrivalPort
+    private String departureDate
+    private String arrivalDate
+    private String owner
+
+    constructor()
+        takes every value as a parameter and instantiates all variables
+
+    // getters and setters for each variable
+
+
+    displayInfo()
+        This method will be the one that demonstrates the use of polymorphism
+        in the output
+
+        for Ship class it will output
+        Ship Name
+        Departure Port
+        Arrival Port 
+        Departure Date 
+        Arrival Date
+        Owner
+
+Class CargoShip extends Ship
+    
+    private String cargoType
+    private String loadingMethod
+    private int numberOfCranes
+    private boolean contraband
+    private int cargoValue
+
+    constructor()
+
+        super to refer to parent class
+        instantiates all new variables
+
+    // getters and setters
+
+
+    // OVERRIDE
+    displayInfo()
+
+        displays info from parent class
+        also displays the following info specific to cargo Ship
+        Cargo Type 
+        Loading Method 
+        Number of Cranes 
+        Contraband 
+        Cargo Value 
+
+class CruiseShip extends Ship
+
+    private double ticketPrice
+    private int numberOfRooms
+    private String[] buffetMenu
+    private String[] services
+    private String cruiseType
+
+    constructor()
+        super to refer to parent class
+        instantiates all new variables
+
+        // getters and setters
+
+
+    // OVERRIDE
+    displayInfo()
+
+        displays info from parent class
+        also displays the following specifi to cruise Ship
+        Ticket Price 
+        Number of Rooms 
+        Buffet Menu 
+        Services 
+        Cruise Type 
+
+Class driver
+
+    Has main
+
+    Will create an array of 3 ship objects
+    each ship will either be ship, CargoShip, and CruiseShip
+
+    use an override method to demonstrate polymorphism
+
