@@ -1,0 +1,16 @@
+How to compile multiple class and create a new [out] directory and be able to execute using javac
+
+To compile
+
+runs java compiler | * represents for all .java files inside | -d is destination which is ../out
+javac *.java -d ../out
+
+Now to execute
+
+using classpath ../ states up two directorys, if you are project directory and see
+ls 
+out src
+
+do ./out
+
+java -cp ../out [package]/[src]/[File.class]
