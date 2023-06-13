@@ -1,0 +1,107 @@
+/*
+Collin      Hargreaves
+CIS 35A          00441
+Assignment           5
+Due         06-06-2023
+Submitted   06-04-2023
+*/
+
+
+Write a program to perform statistical analysis of scores for a class of students.
+The class may have up to 40 students.There are five quizzes during the term. 
+Each student is identified by a four-digit student ID number.
+
+The program is to print the student scores and calculate and print the statistics for each quiz.
+The output is in the same order as the input; 
+no sorting is needed. 
+The input is to be read from a text file. 
+The output from the program should be similar to the following:
+
+class student
+
+    instance variables to hold
+    student ID
+    array of quiz scores
+
+    constructor
+    assign instance variables to arguments
+
+    getters and setters
+
+    print value method
+
+class Utility
+
+    instance variable to hold
+    file name
+
+    constructor
+    assign instance variable to file name passed
+
+    method readFile()
+    this method will take in an empty student object array
+
+    using buffered reader to read next line
+    while (buffer != eof)
+        skip first line of header
+        use tokenizer to break down a whole line into tokens
+        each token will be separated from a space as shown by the delimiter
+        allows us to loop through the 6 token individually 
+        instead of one long line
+
+        With lines split up into tokens now
+        get first token, assign as Student ID
+        get next 5 tokens assign as quiz scores
+        using Integer.parseInt to use the tokens are integers
+        this is done so type is casted properly
+
+    will return a populated student object array
+
+
+class Statistics
+
+    three private instance variables arrays
+    lowvalues
+    highvalues
+    averagevalues
+
+    constructor
+    creates 3 new arrays
+
+    findLow method
+        pass in student array object
+        pass in quiz score index
+
+        for loop to loop through student array
+        if score < lowest score
+        lowest score = score
+
+    findHigh method
+        pass in student array object
+        pass in quiz score index
+
+        for loop to loop through student array
+        if score > highest score
+        highest score = score
+
+    findAvg method
+        pass in student array object
+        pass in quiz score index
+
+        for loop to loop through student array
+        add up entire sum of quiz scores
+
+        return sum / student.length
+
+    print method
+
+class ReadSource
+
+    create a new array of empty student objects
+    create new utility object passing in file
+    create statistic object
+
+    pass empty student array into utility
+    this will populate the new student array
+    calculate statistics
+    print statistics

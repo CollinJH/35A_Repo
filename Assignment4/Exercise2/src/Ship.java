@@ -6,7 +6,7 @@ Due         05-29-2023
 Submitted   05-29-2023
 */
 
-package Exercise2;
+package Exercise2.src;
 
 public class Ship {
 
