@@ -1,0 +1,2 @@
+Attemtping to divide by zero: 4/0
+Attemtping to divide by zero: 2/0

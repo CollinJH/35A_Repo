@@ -1,0 +1,133 @@
+
+
+Design Implementation
+
+This project uses a lot of previously developed code from Assignment5, as follows
+ReadSource.java
+Statistics.java
+Student.java
+Utility.java
+
+////////////////////////////////////////////////
+
+First Requirement Design
+Req 1 - Create a custom exception handler class called StudentGradingException that can (add this functionality in a package called exception)
+
+Create a new package called exception
+Create a new class StudentGradingException
+
+class StudentGradingException
+    This class will use imports
+        FileWriter
+        BufferedWriter
+        IOException
+    
+    String logFile
+
+    public StudentGradingException
+        instanciates logFile
+        runs logException method
+
+    private void logException
+        create a writer object while opening the file, append is true
+        use writer object to write message to file
+
+class Driver1
+
+    Main
+        Driver to handle demonstrate usage of exception class
+        Can demonstrate by trying to divide some numbers
+        If try to divide by zero, throw new StudentGradingException, as you cannot divide by zero
+
+        create two int arrays, divisor and dividend
+        PerformDivison on these two arrays
+
+    PerformDivison 
+
+        takes in divisor and dividends as arguments
+        if divisor == 0
+        throw new StudentGradingException
+
+////////////////////////////////////////////////
+Second Requirement Design
+Req 2 - Deliver the grade for each student in a serialized file. 
+(add this functionality in a package called util and place the FileIO class in util package)
+
+Create a package called util and place Utility.java inside
+Create a new class StudentGrade.java and place inside util package
+
+class StudentGrade
+
+    Utilizing same technique from before to write text to a file
+    
+    GenerateStudentGrade
+        Method will take in array of student objects, as well as statistic object to have acess to the required methods
+        Loop through student object array and write to a file a serialized grade report for each student ID
+        This will be done with getters from student, as well as methods from statistic
+
+class Utility
+
+    adding a method inside of this class
+
+    serializeGrade
+        Method takes array of student objects and statistic object
+        creates a StudentGrade object
+        generates student grade file
+
+class Driver2
+
+    Main
+        Create an array of student objects
+        Create a statistic object to pass to our GenerateStudentGrade call
+        Read data into array of objects
+
+        serialize each students stats into log file
+
+    
+
+////////////////////////////////////////////////
+Third Requirement Design
+Req 3 - Implement abstract class and Interface (add this functionality in a package called adapter)
+
+class StudentAPI (Interface)
+
+    printStudentStats
+    printStatsForStudentID
+
+class StudentAPIImpl implements StudentAPI
+
+    this class must implmenet printStudentStats and printStatsForStudentID
+
+    private Student[] student
+    private Statistics statistic
+
+    StudentAPIImpl
+        will instanciate student and statistic
+
+
+    printStudentStats
+        loops through array of student objects
+        prints appropriate statistics using statistic object and student getters
+
+    printStatsForStudentID
+        loops through array of student objects
+        if student ID value is located
+        print out stats for that student
+        else print student was not found
+
+Class Driver3 
+
+    Main
+
+        create array of student objects
+        create utility object
+        create statistic object
+        create api object
+        
+        read file into array of student objects
+
+        utilizing api adapter
+        print students stats
+        print specific student stats
+
+////////////////////////////////////////////////

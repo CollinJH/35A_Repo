@@ -1,0 +1,90 @@
+Student ID: 1234
+Quiz Scores: [52, 7, 100, 78, 34]
+Lowest Score: 7
+Highest Score: 100
+Average Score: 54
+
+Student ID: 2134
+Quiz Scores: [90, 36, 90, 77, 30]
+Lowest Score: 30
+Highest Score: 90
+Average Score: 64
+
+Student ID: 3124
+Quiz Scores: [100, 45, 20, 90, 70]
+Lowest Score: 20
+Highest Score: 100
+Average Score: 65
+
+Student ID: 4532
+Quiz Scores: [11, 17, 81, 32, 77]
+Lowest Score: 11
+Highest Score: 81
+Average Score: 43
+
+Student ID: 5678
+Quiz Scores: [20, 12, 45, 78, 34]
+Lowest Score: 12
+Highest Score: 78
+Average Score: 37
+
+Student ID: 6134
+Quiz Scores: [34, 80, 55, 78, 45]
+Lowest Score: 34
+Highest Score: 80
+Average Score: 58
+
+Student ID: 7874
+Quiz Scores: [60, 100, 56, 78, 78]
+Lowest Score: 56
+Highest Score: 100
+Average Score: 74
+
+Student ID: 8026
+Quiz Scores: [70, 10, 66, 78, 56]
+Lowest Score: 10
+Highest Score: 78
+Average Score: 56
+
+Student ID: 9893
+Quiz Scores: [34, 9, 77, 78, 20]
+Lowest Score: 9
+Highest Score: 78
+Average Score: 43
+
+Student ID: 1947
+Quiz Scores: [45, 40, 88, 78, 55]
+Lowest Score: 40
+Highest Score: 88
+Average Score: 61
+
+Student ID: 2877
+Quiz Scores: [55, 50, 99, 78, 80]
+Lowest Score: 50
+Highest Score: 99
+Average Score: 72
+
+Student ID: 3189
+Quiz Scores: [22, 70, 100, 78, 77]
+Lowest Score: 22
+Highest Score: 100
+Average Score: 69
+
+Student ID: 4602
+Quiz Scores: [89, 50, 91, 78, 60]
+Lowest Score: 50
+Highest Score: 91
+Average Score: 73
+
+Student ID: 5405
+Quiz Scores: [11, 11, 0, 78, 10]
+Lowest Score: 0
+Highest Score: 78
+Average Score: 22
+
+Student ID: 6999
+Quiz Scores: [0, 98, 89, 78, 20]
+Lowest Score: 0
+Highest Score: 98
+Average Score: 57
+
